@@ -18,10 +18,10 @@ body{
   padding: 0;
   margin: 0;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   font-family: 'Inter',"Arial", sans-serif;
   background-color: #E7E7E7;
-  color: #222;
+  color: #fff;
 }
 
 img{
@@ -36,7 +36,7 @@ a{
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1252px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -45,8 +45,64 @@ a{
 
 /* MAIN-CONTENT */
 .main-content{
+  display: flex;
   flex-grow: 1;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+.banner-ad {
+  background-image: url("../img/bg-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.banner-ad-info{
+  padding-top: 55px;
+  padding-left: 60px;
+  padding-right: 120px;
+  color: #fff;
+}
+
+.banner-ad-top {
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 41px;
+  padding: 5px 15px;
+  margin-bottom: 60px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.banner-ad-heading {
+  width: 389px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.banner-ad-text {
+  width: 347px;
+  margin-top: 0;
+  margin-bottom: 200px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.banner-ad-propsal {
+  display: block;
+  background-color: #4DC490;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+}
+
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
@@ -56,5 +112,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+  .banner-ad {
+    background-image: url("../img/bg-banner.jpg");
+  }
 }
