@@ -29,9 +29,6 @@ img{
   height: auto;
 }
 
-a{
-  text-decoration: none;
-}
 
 /* CONTAINER */
 .container{
@@ -46,7 +43,7 @@ a{
 /* MAIN-CONTENT */
 .main-content{
   display: flex;
-  flex-grow: 1;
+  height: 100%;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -104,6 +101,95 @@ a{
 }
 
 
+/* SIGN-UP */
+
+.sing-up {
+  margin-left: 12px;
+  padding-top: 55px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.sign-up-title {
+  width: 428px;
+  margin-top: 0;
+  margin-bottom: 79px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  color: #000;
+}
+
+
+
+input{
+  display: block;
+  width: 450px;
+  border: 0;
+  border-bottom: 1px solid #555555;
+  outline: none;
+  padding-bottom: 11px;
+}
+
+input:not(:nth-child(4)){
+  margin-bottom: 35px;
+}
+
+input:focus{
+  font-size: 18px;
+  font-weight: 600;
+  color:#000;
+  border-bottom: 2px solid #000;
+}
+
+
+.claim-sign-up-btn {
+  display: block;
+  width: 100%;
+  margin-top: 63px;
+  margin-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 0;
+  background-color: #655AF2;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  transition:  background-color 0.4s ease;
+}
+
+.claim-sign-up-btn:active{
+  background-color: #3A2BF8;
+}
+
+.alert-box{
+  text-align: center;
+}
+
+.alert-text{
+  display: inline-block;
+  font-size: 11px;
+  line-height: 15px;
+  color: #555555;
+}
+.agreement-link {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 15px;
+  color: #F03535;
+}
+
+
+/* MEDIA
+
+@media only screen and (max-width:345px) {
+
+} */
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
