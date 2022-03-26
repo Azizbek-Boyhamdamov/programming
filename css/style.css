@@ -1,3 +1,5 @@
+
+
 /* GLOBAL */
 html{
   box-sizing: border-box;
@@ -22,6 +24,11 @@ body{
   font-family: 'Inter',"Arial", sans-serif;
   background-color: #E7E7E7;
   color: #fff;
+}
+
+*:focus{
+  outline:  2px dashed #3A2BF8;
+  outline-offset: 2px;
 }
 
 img{
@@ -123,11 +130,14 @@ img{
   color: #000;
 }
 
+.sing-up-form{
+  width: 450px;
+}
 
 
 input{
   display: block;
-  width: 450px;
+  width: 100%;
   border: 0;
   border-bottom: 1px solid #555555;
   outline: none;
@@ -143,6 +153,7 @@ input:focus{
   font-weight: 600;
   color:#000;
   border-bottom: 2px solid #000;
+  outline-style: none;
 }
 
 
@@ -167,6 +178,11 @@ input:focus{
   background-color: #3A2BF8;
 }
 
+.claim-sign-up-btn:focus{
+  outline:  2px dashed #3A2BF8;
+  outline-offset: 2px;
+}
+
 .alert-box{
   text-align: center;
 }
@@ -185,11 +201,101 @@ input:focus{
 }
 
 
-/* MEDIA
+/* MEDIA */
 
-@media only screen and (max-width:345px) {
+@media only screen and (max-width:600px) {
 
-} */
+  .main-content{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 0;
+  }
+
+  .container{
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .banner-ad-info{
+    padding-top: 45px;
+    padding-left: 25px;
+    padding-right: 79px;
+  }
+
+  .banner-ad-top {
+    border-radius: 45px;
+    margin-bottom: 40px;
+    font-size: 10px;
+  }
+
+  .banner-ad-heading {
+    width: 241px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .banner-ad-text {
+    width: 210px;
+    margin-bottom: 120px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .banner-ad-propsal {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* SIGN-UP */
+
+  .sing-up {
+    margin-left: 0;
+    margin-top: 12px;
+    padding-top: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 45px;
+    border-radius: 20px;
+  }
+
+  .sign-up-title {
+    width: 259px;
+    margin-bottom: 45px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .sing-up-form{
+    width: 295px;
+  }
+
+  input{
+    padding-bottom: 10px;
+  }
+
+  .claim-sign-up-btn {
+    display: block;
+    width: 295px;
+    margin-top: 70px;
+    border-radius: 10px;
+  }
+
+  .alert-box{
+    width: 295px;
+    text-align: center;
+  }
+
+  .alert-text{
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
